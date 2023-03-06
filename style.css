@@ -1,0 +1,19 @@
+
+html{
+    background-color:#fa8072;
+    background-size: 100%;
+    color: #f8f8ff;
+    font-size: 150%;
+    border: solid 10px #f8f8ff;
+    height:97.7vh;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    height:97.7vh;
+}
+.flex-box {
+    word-wrap: break-word;
+    font-size: 80%
+    /* text-allign: center; */
+}
