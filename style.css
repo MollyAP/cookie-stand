@@ -1,19 +1,248 @@
+/* The body of the webpage */
+body {
+    margin: 0;
+    margin-top: 5%;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #666666;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+}
 
-html{
-    background-color:#fa8072;
-    background-size: 100%;
-    color: #f8f8ff;
-    font-size: 150%;
-    border: solid 10px #f8f8ff;
-    height:97.7vh;
+/* Navbar stuff */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1;
 }
-.flex-container {
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navagation {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #fa8072;
+    color: #000;
+}
+
+/* Landing image and related elements */
+.image-container {
+    background-image: url(./images/family.jpg);
+    background-position-x: center;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100%;
+    color: #FFFFFF;
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    text-align: left;
     display: flex;
-    flex-direction: row;
-    height:97.7vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(30%);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: -1;
 }
-.flex-box {
-    word-wrap: break-word;
-    font-size: 80%
-    /* text-allign: center; */
+
+.image-container:hover .overlay {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.overlay h2 {
+    color: #FFFFFF;
+    font-size: 2rem;
+    text-align: left;
+}
+
+h2 {
+    color: #000000;
+    font-size: 2rem;
+}
+
+button {
+    flex-direction: row;
+    background-color: transparent;
+    color: #ffffff;
+    border: solid #ffffff;
+    border-radius: 26px;
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 240%;
+    margin-left: 150%;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    border-color: #fa8072;
+    color: #fa8072;
+}
+
+.flex {
+    display: flex;
+}
+
+.found {
+    margin-left: 10%;
+    width: 50%;
+    font-size: 1.5rem;
+}
+/* Main content of the website */
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 40px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    line-height: 1.0;
+}
+
+.box-one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-one>div {
+    flex-basis: 50%;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    margin: 20px;
+}
+
+.box-one>div>img {
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 300px;
+    max-height: 300px;
+    border: 2px solid #ccc;
+}
+
+.testimonial {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.testimonial img {
+    float: left;
+    margin-right: 10px;
+}
+
+.testimonial p {
+    margin-bottom: 10px;
+}
+
+.testimonial .author {
+    font-style: italic;
+}
+
+.testimonial .rating {
+    font-size: 28px;
+    margin: 0;
+}
+
+/* Footer stuff */
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer div {
+    flex-basis: calc(25% - 20px);
+    margin-right: 20px;
+}
+
+footer h2 {
+    color: #ffffff;
+}
+
+footer div:last-of-type {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: #fa8072;
+}
+
+.connect ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.connect li {
+    margin: 0 10px;
+}
+
+.connect li a i {
+    color: #ffffff;
 }
