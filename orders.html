@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-        </style>
+    </style>
     <script src="https://kit.fontawesome.com/80f12d827a.js" crossorigin="anonymous"></script>
     <title>Salmon Cookies LLC</title>
 </head>
@@ -22,6 +22,55 @@
             </ul>
         </nav>
     </header>
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Cookie Order Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1 class="orders">Order Now!</h1>
+        <p class="orders2">
+            Welcome to Pat's Cookies! We're not your average bakery - we specialize in selling cookies that are not only
+            delicious for humans but also safe for our aquatic friends. Please use the form below to place your order!
+            We'll need your payment information and address to ensure that your cookies are delivered straight to your
+            door. Thank you for choosing Pat's Cookies to treat your sweet tooth!
+        </p>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address"><br>
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="creditcard">Credit Card:</label><br>
+            <input type="text" id="creditcard" name="creditcard"><br>
+            <label for="cookie">Cookie:</label><br>
+            <select id="cookie" name="cookie">
+                <option value="chocolate chip">Choose Flavor</option>
+                <option value="chocolate chip">Original</option>
+                <option value="peanut butter">Chocolate Chip</option>
+                <option value="oatmeal raisin">Fruit</option>
+            </select><br>
+            <label for="size">Size:</label><br>
+            <select id="size" name="size">
+                <option value="small">Choose Box Size</option>
+                <option value="small">Small Box</option>
+                <option value="medium">Medium Box</option>
+                <option value="large">Large Box</option>
+            </select><br>
+            <label for="quantity">Quantity:</label><br>
+            <input type="number" id="quantity" name="quantity"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+
+    </html>
 
 
     <footer>
